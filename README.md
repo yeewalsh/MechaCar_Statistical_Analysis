@@ -5,9 +5,9 @@ Using R to perform statistical analysis on car manufacturing data.
 
 Using vehicle performance data on the MechaCar prototype, we can see which physical features most affect the car's mpg. 
 
-![Linear Regression for MPG](LinRegforMPG.PNG)
-
 The residuals of the linear regression show how the actual data differs from the predicted amounts of the regression. The median, or MPG amount that falls in the middle of the data set was very close (-0.0692) to the linear regression. Meanwhile, the min and max MPG almost 20 miles different from predicted values: -19.4701 and 18.5849 respectively.
+
+![Linear Regression for MPG](LinRegforMPG.PNG)
 
 Reviewing the last column of the correlations will tell us the p-value of the variable, which shows statistical significance when the value is under 0.05. 
 
@@ -22,7 +22,23 @@ Reviewing the last column of the correlations will tell us the p-value of the va
 
 2. The slope of the linear regression is non-zero, meaning changes to our independent variables of vehicle length, weight, spoiler angle, ground clearance and AWD are estimated to result in positive or negative changes in the MPG. 
 
-3. The linear model does effectively predict the car's MPG, shown by the p-value 5.35e-11 corresponding to the F-statistic. This value represents the number 0.0000000000535, which is lower than 0.05 and shows that this model is more useful than a model with no data inputs. 
+3. The linear model effectively predicts the car's MPG, shown by the p-value 5.35e-11 corresponding to the F-statistic. This value represents the number 0.0000000000535, which is lower than 0.05 and shows that this model is more useful than a model with no data inputs. 
+
+## Summary Statistics on Suspension Coils
+
+_The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?_
+
+Reviewing data from all manufacturing lots totaled together, the production of suspension coils does meet the design specifications although there is room for improvement. The summary statistics below show the variance of 62 punds per square inch, whereas the design specifications for the MechaCar suspension coils dictate that the variance must not exceed 100 pounds per square inch.
+
+![Total PSI Data Summary](total_summary.PNG)
+
+Analyzing the data from each lot individually, we see that Lot 3 suspension coils are not meeting the design specifications. At Lot 3, suspension coil pressure exceeds the design specifications with a variance of 170.29 punds per square inch. 
+
+The suspension coils at lots 2 and 3 meet the requirements with variances of 0.98 and 7.47 pounds per square inch respectively.
+
+
+![Per Lot PSI Data Summary](lot_summary.PNG)
+
 
 
 
