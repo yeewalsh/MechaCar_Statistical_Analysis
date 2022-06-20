@@ -39,6 +39,34 @@ The suspension coils at lots 2 and 3 meet the requirements with variances of 0.9
 
 ![Per Lot PSI Data Summary](lot_summary.PNG)
 
+## T-Tests on Suspension Coils
+
+Drilling into the PSI data points, we can perform t-tests to test the likelyhood of predicting the mean of the data across all manufacturing plants, and by individual manufacturing lot. 
+
+The results of the t-test of all data together shows the mean PSI of 1500 is not a good predictor for the dataset. The p-vallue is 1, which is over the significance value of 0.05 percent. 
+
+![t-test of total PSI data](total_t-test.PNG)
+
+The below t-test analyzes the PSI values from suspension coils at manufacturing lot 1. Due to the low, near-zero p-value, the mean of the data is statisticallay significant and a good predictor for the PSI of suspension coils made at this facility.
+
+![t-test of Lot 1 PSI](lot1_t-test.PNG)
+
+The below t-test analyzes the PSI values from suspension coils at manufacturing lot 2. The p-value of 0.0005911 is below the significance level of 0.05, the mean of the data is statisticallay significant and a good predictor for the PSI of suspension coils made at this facility.
+
+![t-test of Lot 2 PSI](lot2_t-test.PNG)
+
+The below t-test analyzes the PSI values from suspension coils at manufacturing lot 3. The p-value of 0.1589 is above the significance level of 0.05, which means the average value of PSI for the overall production data is not statistically significant in predicting the the PSI of suspension coils made at this facility.
+
+![t-test of Lot 3 PSI](lot3_t-test.PNG)
+
+## Study Design: MechaCar vs Competition
+
+We can use similar statistical testing to examine MechaCar's performance against the competition. We seek to understand how the initial cost of MechaCars is offset by the ongoing maintainance and fuel costs compared to other car makers. By summarizing data from different car makers we can use the following data points to analyze the cost of owning each car and how long to expect to use it:
+
+
+
+The metric we will use to gauge the cost analysis is the
+
 
 
 
