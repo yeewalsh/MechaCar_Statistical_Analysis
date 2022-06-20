@@ -5,7 +5,7 @@ Using R to perform statistical analysis on car manufacturing data.
 
 Using vehicle performance data on the MechaCar prototype, we can see which physical features most affect the car's mpg. 
 
-![Linear Regression for MPG]("LinRegforMPG.PNG")
+![Linear Regression for MPG](LinRegforMPG.PNG)
 
 The residuals of the linear regression show how the actual data differs from the predicted amounts of the regression. The median, or MPG amount that falls in the middle of the data set was very close (-0.0692) to the linear regression. Meanwhile, the min and max MPG almost 20 miles different from predicted values: -19.4701 and 18.5849 respectively.
 
