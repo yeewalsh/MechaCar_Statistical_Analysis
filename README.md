@@ -63,11 +63,20 @@ The below t-test analyzes the PSI values from suspension coils at manufacturing 
 
 We can use similar statistical testing to examine MechaCar's performance against the competition. We seek to understand how the initial cost of MechaCars is offset by the ongoing maintainance and fuel costs compared to other car makers. By summarizing data from different car makers we can use the following data points to analyze the cost of owning each car and how long to expect to use it:
 
+The metric we will use to gauge the cost analysis is the rate of change of gas mileage against the age of vehicle. We will also look at the number of years it takes to save $2500 in gas compared to other cars in the size bracket. 
 
+Hypothesis: Over the first five years of the MechaCar vehicle lifespan, the rate of change of the gas mielage is less than, or equal to 0.1. 
 
-The metric we will use to gauge the cost analysis is the
+Viewing car useage data and mileage data of hybrid cars from 4 different automakers, we can fit the mileage and age data to a linear regression to see if the slope of the line, or rate of change. The statistical analysis will follow these steps:
 
+1. Group the car data by maker and by age (years).
+2. Calculate the average miles per make and gallon on each year of data.
+3. Perform a t-test on each of the miles per gallon data sets to test the statistical significance of the mileage per make. 
+    _If the average mileage data is not statistically significant then it can be shown that the maker in question has not built a reliable vehicle when compared to MechaCar_
+4. Perform linear regression on age (x) versus average gas mileage (y).
+5. Calculate the summary statistics on the linear regression and analyze the p-value score to ensure that the line matches to the data with a statistical significance of 0.01.
 
+For the null hypothesis to be true, the linear regression must have a p-value of less than 0.01, as well as show that the rate of change (slope) of the linear regression is less than or equal to 0.1. This will show that the car will have a reliable cost of gas, and will help us predict the amount of savings or cost comparison to other makers per year. This data can be used to justify the potentially higher cost of MechaCar hybrid model against the competition, showing that the fuel savings for the first 5 years will be greater than the difference in the car's initial cost. 
 
 
 
